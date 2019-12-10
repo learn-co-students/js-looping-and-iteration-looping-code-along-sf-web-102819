@@ -1,16 +1,16 @@
 // Code your solutions in this file
 let names = [ 'Lisa', 'Kaitlin', 'Jan' ]
 
-function writeCards(arr) {
-    let result = []
+function writeCards(arr, event) {
+    let thankYouCards = []
     for (let i = 0; i < names.length; i++) {
         let name = names[i]
-        result.push(`Thank you, ${name}, for the wonderful surprise gift!`)
+        thankYouCards.push(`Thank you, ${name}, for the wonderful ${event} gift!`)
     }
-    return result
+    return thankYouCards
 }
 
-// console.log(writeCards(names))
+console.log(writeCards(names))
 
 function countDown(num) {
 
@@ -25,4 +25,4 @@ function countDown(num) {
     }
 }
 
-countDown(10)
+// countDown(10)
